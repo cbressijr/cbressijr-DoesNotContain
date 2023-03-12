@@ -16,11 +16,11 @@ public class DoesNotContain {
      */
     public boolean arrayDoesNotContain(int[] arr, int target){
         for (int element : arr) {
-            if (element != target) {
-                return true;
-            } 
+            if (element == target) {
+                return false;
+            }
         }
-        return false;
+        return true;
         
     }
 }
